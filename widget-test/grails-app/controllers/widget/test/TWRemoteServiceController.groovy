@@ -7,15 +7,12 @@ class TWRemoteServiceController {
     def index() { }
 	
 	def getCurrencyList() {
-		List<String> list = new ArrayList<String>()
-		list.add("EUR")
-		list.add("USD")
-		list.add("RUB")
+		def list = ["EUR", "USD", "RUB"]
 		
 		render list as JSON
 	}
 	
 	def calculate() {
-		render "Calculated amount. ta: " + params.targetAmount + ", tc: " + params.targetCurrency + ", sc: " + params.sourceCurrency
+		render "ta: " + params.targetAmount + ", tc: " + params.targetCurrency + ", sc: " + params.sourceCurrency
 	}
 }
