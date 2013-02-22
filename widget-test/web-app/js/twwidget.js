@@ -5,17 +5,16 @@ var TwWidget = function(form) {
 
 TwWidget.prototype = {
 	init : function() {
-		var placeholderDiv = jQuery('<div name="tw-widget-place-holder"></div>');
-		var redirectButton = jQuery('<input type="image" value="Pay with Transferwise"/>');
-		this.sourceValueInput = jQuery('<input style="width: 100px; text-align: right;" value="" disabled="disabled"/>');
-		this.currencyListSelect = jQuery('<select name="currencies" style="width: 70px; text-align: center;"></select>');
+		var placeholderDiv = jQuery('<div class="tw-widget-place-holder" name="tw-widget-place-holder"></div>');
+		var redirectButton = jQuery('<input class="tw-widget-button" type="button" value="Pay with Transferwise"/>');
+		this.sourceValueInput = jQuery('<input class="sourceAmount" value="" disabled="disabled"/>');
+		this.currencyListSelect = jQuery('<select class="currencyList" name="currencies"></select>');
 		this.fillSelectByCurrencies(this.currencyListSelect);
-
+		
 		this.form.append(placeholderDiv);
 		placeholderDiv.append(this.sourceValueInput);
 		placeholderDiv.append(this.currencyListSelect);
 		placeholderDiv.append(redirectButton);
-
 		
 		var self = this;
 		redirectButton.click(function() {
@@ -25,8 +24,6 @@ TwWidget.prototype = {
 		this.currencyListSelect.change(function() {
 			self.calculateSourceAmountForTargetValues(self.sourceValueInput);
 		});
-
-		this.calculateSourceAmountForTargetValues(this.sourceValueInput);
 	},
 
 	buttonClickHandler : function() {
@@ -72,5 +69,4 @@ jQuery(function() {
 	jQuery('.web-site-form-class').each(function(index, el) {
 		new TwWidget(el);
 	});
-
 })

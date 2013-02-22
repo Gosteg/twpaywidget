@@ -1,0 +1,21 @@
+.sourceAmount {
+	width: 100px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.currencyList {
+	width: 70px;
+	height: 28px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.tw-widget-place-holder {
+	margin: 5px 0px;
+}
+
+.tw-widget-button {
+	height: 28px;
+	vertical-align: middle;
+}

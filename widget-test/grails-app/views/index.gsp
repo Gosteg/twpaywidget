@@ -109,37 +109,7 @@
 					<br>
 					<div>
 						<h4>Price:</h4>
-						<input name="amount" value="149,99" style="width: 100px; text-align: right;"/>
-						<input name="currency" value="EUR" style="width: 40px; text-align: center;"/>
-						<br><br>
-						<input type="image" value="Buy"/>
-					</div>
-				</form>
-				<form action="" class="web-site-form-class">
-					<div>
-						<h1>Something that every one want to buy</h1>
-					</div>
-					<div>
-						<div style="float: left;">
-							<img alt="icon" src="images/apple-touch-icon-retina.png">
-						</div>
-						<div style="width: 400px; text-align: justify;">
-							<h5>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac nisi elit. Donec adipiscing ullamcorper mi, 
-								viverra commodo arcu pulvinar sed. Etiam erat quam, tincidunt non varius ac, imperdiet et arcu. 
-								Fusce dictum erat tortor. Ut euismod vulputate bibendum. 
-								<br><br>
-								In scelerisque eros ac nunc accumsan adipiscing varius arcu semper. 
-								Sed sit amet dolor lectus. Etiam justo eros, euismod quis porttitor quis, tempus ut ante. 
-								Sed id dolor sed lectus tincidunt consequat sed quis neque. Cras suscipit purus in turpis laoreet tincidunt. 
-								Ut consequat sagittis arcu, sit amet pulvinar odio pharetra ut.
-							</h5>
-						</div>
-					</div>
-					<br>
-					<div>
-						<h4>Price:</h4>
-						<input name="amount" value="149,99" style="width: 100px; text-align: right;"/>
+						<input name="amount" value="149.99" style="width: 100px; text-align: right;"/>
 						<input name="currency" value="EUR" style="width: 40px; text-align: center;"/>
 						<br><br>
 						<input type="image" value="Buy"/>
